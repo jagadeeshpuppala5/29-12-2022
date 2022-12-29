@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flex responsive</title>
+	<style type="text/css">
+		* {
+			box-sizing:border-box;
+		}
+
+		body{
+			margin:0;
+			font-family:Arial;
+		}
+
+		.header{
+			text-align:center;
+			padding:30px;
+		}
+
+		.row{
+			display:flex;
+			flex-wrap:wrap;
+			padding: 0 4px;
+		}
+
+		/* Create four equal cloumns that sits next to each other */
+		.column{
+			flex:25%;
+			max-width:25%;
+			padding:0 4px;
+		}
+
+		.column img{
+			margin-top:8px;
+			vertical-align:middle;
+		}
+
+		/*Responsive layout - makes a two column instead of four columns*/
+		@media (max-width:800px){
+			.column{
+				flex:50%;
+				max-width:50%;
+			}
+		}
+
+		@media (max-width:600px){
+			.column{
+				flex:100%;
+				max-width:100%;
+			}
+		}
+	</style>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+	<h1>Responsive Image Gallery</h1>
+</div>
+
+<!--Photo Grid-->
+<div class="row">
+	<div class="column">
+		<img src="https://img.freepik.com/free-vector/2023-happy-new-year-text-typography-design-poster-template-brochure-decorated-flyer-banner-design_460848-15872.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/elegant-new-year-2023-winter-season-banner-with-confetti_1017-41723.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/premium-photo/new-year-2023-creative-design-concept-3d-rendered-image_702650-40.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/beautiful-2023-card-holiday-celebration-background_1035-25330.jpg?size=338&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/2023-happy-new-year-3d-text-typography-design-element_460848-15986.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111&semt=ais" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/2023-happy-new-year-3d-text-typography-design-element-flyer-poster-wallpaper-background_460848-15945.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111&semt=ais" style="width:100%">
+		<img src="https://img.freepik.com/premium-photo/big-word-cloud-with-new-year-words-with-magnifying-glass-new-year-celebration-motivation-start_424947-9181.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111&semt=ais" style="width:100%">
+	</div>
+
+	<div class="column">
+		<img src="https://img.freepik.com/premium-vector/luxury-golden-abstract-background-vector-illustration_29865-6035.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/premium-vector/cute-snowman-character-collection-christmas-element-happy-holliday-spirit-illustration_665222-148.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/realistic-winter-season-background_23-2149935497.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/3d-wooden-table-looking-out-snowy-landscape_1048-9807.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/christmas-background-with-hanging-baubles_1048-17261.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/christmas-background-with-pine-tree-branches-hanging-snowflakes_1048-17617.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+	</div>
+
+	<div class="column">
+		<img src="https://img.freepik.com/free-vector/winter-landscape-with-ropeway-station-ski-cable-cars_1262-16849.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/winter-landscape-with-cottage-fir-trees-illustration_1262-16838.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/watercolor-winter-snow-plow-illustration_23-2149849976.jpg?size=338&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/flat-snow-plow-illustration_23-2149836268.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/flat-snow-car-illustration_23-2149845115.jpg?size=338&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/sparrow-character-illustrations-set_74855-17867.jpg?w=1800&t=st=1672307764~exp=1672308364~hmac=7429dde9da51c3b08b2ef141e8d45b43db3dc3c6528d266d7450f18457003234" style="width:100%">
+	</div>
+
+	<div class="column">
+		<img src="https://img.freepik.com/free-vector/flat-winter-window-illustration_23-2149897834.jpg?auto=format&h=200" style="width:100%">
+		<img src="https://img.freepik.com/premium-photo/winter-landscape-wooden-cabin-trees-snow-countryside_162585-3482.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/premium-photo/house-snowy-mountains-digital-art-illustration_725906-83.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.2.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-vector/wooden-signs-snow-vector-set-billboard-arrow-winter-blank-post-wooden-signs-with-snow-vector-illustration_1284-46258.jpg?size=338&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/hand-presenting-model-house-home-loan-campaign_53876-104970.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111" style="width:100%">
+		<img src="https://img.freepik.com/free-photo/travel-concept-with-baggage_23-2149153260.jpg?size=626&ext=jpg&uid=R85202679&ga=GA1.1.1859394032.1668591111" style="width:100%">
+	</div>
+</div>
+</body>
+</html>
